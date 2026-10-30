@@ -1,5 +1,9 @@
 # Codex Hermes History
 
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](VERSION)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+[![Tests](https://github.com/xiwang-geo/codex-hermes-history/actions/workflows/test.yml/badge.svg)](https://github.com/xiwang-geo/codex-hermes-history/actions/workflows/test.yml)
+
 [简体中文](README_ZH-CN.md) | English
 
 A local, read-only Codex skill for finding and reading **Hermes Agent conversations without copying session IDs**.

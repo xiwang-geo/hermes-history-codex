@@ -1,5 +1,8 @@
 # Codex 读取 Hermes 对话
 
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](VERSION)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+
 简体中文 | [English](README.md)
 
 一个本地、只读的 Codex 技能：**按标题、关键词和日期查找 Hermes 历史对话，无需手动复制对话 ID。**
