@@ -1,5 +1,5 @@
 ---
-name: hermes-history
+name: hermes-history-codex
 description: Find and read local Hermes conversations from Codex by title, keywords, or dates without making the user copy session IDs. Use for requests such as 读取Hermes对话、加载Hermes聊天、找上次Hermes讨论、continue from a Hermes chat. Read-only history retrieval, not sending tasks to Hermes or importing a knowledge base.
 license: MIT
 ---

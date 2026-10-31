@@ -17,12 +17,12 @@ jobs:
       - name: Package skill
         run: |
           cd skills
-          zip -r "../hermes-history-${GITHUB_REF_NAME}.zip" hermes-history
+          zip -r "../hermes-history-codex-${GITHUB_REF_NAME}.zip" hermes-history-codex
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: hermes-history-*.zip
+          files: hermes-history-codex-*.zip
           body_path: CHANGELOG.md
           draft: false
           prerelease: false

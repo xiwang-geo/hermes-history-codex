@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](VERSION)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
-[![Tests](https://github.com/xiwang-geo/codex-hermes-history/actions/workflows/test.yml/badge.svg)](https://github.com/xiwang-geo/codex-hermes-history/actions/workflows/test.yml)
+[![Tests](https://github.com/xiwang-geo/hermes-history-codex/actions/workflows/test.yml/badge.svg)](https://github.com/xiwang-geo/hermes-history-codex/actions/workflows/test.yml)
 
 [简体中文](README_ZH-CN.md) | English
 
@@ -27,21 +27,21 @@ macOS/Linux execution has not yet been independently verified.
 Using the Skills CLI (requires Node.js):
 
 ```sh
-npx skills add xiwang-geo/codex-hermes-history --skill hermes-history --agent codex --global --yes
+npx skills add xiwang-geo/hermes-history-codex --skill hermes-history-codex --agent codex --global --yes
 ```
 
-Or copy `skills/hermes-history/` to `$CODEX_HOME/skills/hermes-history`
-(default: `~/.codex/skills/hermes-history`). Start a new Codex conversation
+Or copy `skills/hermes-history-codex/` to `$CODEX_HOME/skills/hermes-history-codex`
+(default: `~/.codex/skills/hermes-history-codex`). Start a new Codex conversation
 if the skill does not appear immediately.
 
 ## Use in Codex
 
 ```text
-Use $hermes-history to find yesterday's Hermes discussion about numerical modeling.
+Use $hermes-history-codex to find yesterday's Hermes discussion about numerical modeling.
 ```
 
 ```text
-使用 $hermes-history，读取 Hermes 中讨论水同位素的那段对话。
+使用 $hermes-history-codex，读取 Hermes 中讨论水同位素的那段对话。
 ```
 
 If several conversations fit, choose by number or title. If multiple databases
@@ -52,10 +52,10 @@ or profiles are detected, choose the relevant home/profile, not a session ID.
 Run from this repository. Use `python3` instead of `python` when appropriate.
 
 ```sh
-python skills/hermes-history/scripts/hermes_history.py discover
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db search "isotope"
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db search "modeling" --since 2026-10-01 --until 2026-10-30
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db read SESSION_ID
+python skills/hermes-history-codex/scripts/hermes_history.py discover
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db search "isotope"
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db search "modeling" --since 2026-10-01 --until 2026-10-30
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db read SESSION_ID
 ```
 
 The last command is for the agent: end users do not need to supply IDs.

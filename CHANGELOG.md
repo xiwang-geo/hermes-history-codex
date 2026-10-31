@@ -7,7 +7,7 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- `hermes-history` skill for Codex: find and read local Hermes Agent
+- `hermes-history-codex` skill for Codex: find and read local Hermes Agent
   conversations by title, keyword, or date without copying session IDs.
 - `discover`, `search`, and `read` subcommands backed by a single read-only
   SQLite connection (`mode=ro`) to the Hermes `state.db`.

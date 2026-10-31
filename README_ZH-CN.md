@@ -25,21 +25,21 @@ Codex 会先检索，再在多个候选中让你按编号或标题选择，随�
 通过 Skills CLI（需要 Node.js）：
 
 ```sh
-npx skills add xiwang-geo/codex-hermes-history --skill hermes-history --agent codex --global --yes
+npx skills add xiwang-geo/hermes-history-codex --skill hermes-history-codex --agent codex --global --yes
 ```
 
-也可以把仓库中的 `skills/hermes-history/` 复制到
-`$CODEX_HOME/skills/hermes-history`，默认位置为
-`~/.codex/skills/hermes-history`。未立即显示时，新开一个 Codex 对话。
+也可以把仓库中的 `skills/hermes-history-codex/` 复制到
+`$CODEX_HOME/skills/hermes-history-codex`，默认位置为
+`~/.codex/skills/hermes-history-codex`。未立即显示时，新开一个 Codex 对话。
 
 ## 直接调用
 
 ```text
-使用 $hermes-history，找昨天 Hermes 中讨论数值建模的对话并读取。
+使用 $hermes-history-codex，找昨天 Hermes 中讨论数值建模的对话并读取。
 ```
 
 ```text
-使用 $hermes-history，列出最近的 Hermes 对话，让我选一个继续。
+使用 $hermes-history-codex，列出最近的 Hermes 对话，让我选一个继续。
 ```
 
 匹配到多条对话时，按编号或标题选择。如果发现多个数据库或配置档，先选择
@@ -50,10 +50,10 @@ npx skills add xiwang-geo/codex-hermes-history --skill hermes-history --agent co
 在仓库目录执行；部分系统需要将 `python` 改为 `python3`。
 
 ```sh
-python skills/hermes-history/scripts/hermes_history.py discover
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db search "同位素"
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db search "建模" --since 2026-10-01 --until 2026-10-30
-python skills/hermes-history/scripts/hermes_history.py --db /path/to/state.db read SESSION_ID
+python skills/hermes-history-codex/scripts/hermes_history.py discover
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db search "同位素"
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db search "建模" --since 2026-10-01 --until 2026-10-30
+python skills/hermes-history-codex/scripts/hermes_history.py --db /path/to/state.db read SESSION_ID
 ```
 
 最后一条由 Codex 使用检索结果中的 ID 执行，用户不必手动输入。

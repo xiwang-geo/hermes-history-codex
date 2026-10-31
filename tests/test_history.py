@@ -8,7 +8,7 @@ import sqlite3
 import tempfile
 import unittest
 
-SCRIPT = Path(__file__).resolve().parents[1] / 'skills/hermes-history/scripts/hermes_history.py'
+SCRIPT = Path(__file__).resolve().parents[1] / 'skills/hermes-history-codex/scripts/hermes_history.py'
 spec = importlib.util.spec_from_file_location('history', SCRIPT)
 h = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(h)
